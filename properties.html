@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore exceptional properties for sale and rent with Havenstone Real Estate.">
+
+    <title>Properties | Havenstone</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+    <nav class="navbar container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-name">HAVENSTONE</span>
+            <span class="logo-subtitle">REAL ESTATE & PROPERTY CONSULTANTS</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html" class="active">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <a href="contact.html" class="nav-button">List a Property</a>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </nav>
+    </header>
+
+
+<!-- PROPERTIES PAGE INTRODUCTION -->
+
+<section class="properties-hero">
+    <div class="container">
+
+        <span class="section-label">EXPLORE OUR COLLECTION</span>
+
+        <h1>Discover Your Next Address</h1>
+
+        <p>
+            Explore exceptional homes, apartments and investment
+            opportunities across some of the world's most
+            desirable locations.
+        </p>
+
+    </div>
+</section>
+<!-- PROPERTY FILTERS -->
+
+<section class="property-listings">
+    <div class="container">
+
+        <div class="listing-heading">
+            <div>
+                <span class="section-label">FIND YOUR PLACE</span>
+                <h2>Explore Properties</h2>
+            </div>
+
+            <p>Discover a property that suits your lifestyle.</p>
+        </div>
+
+        <form class="listing-filters" id="listingFilters">
+
+            <div class="filter-field">
+                <label for="listingLocation">Location</label>
+                <input
+                    type="text"
+                    id="listingLocation"
+                    placeholder="Enter a city or country">
+            </div>
+
+            <div class="filter-field">
+                <label for="listingType">Property Type</label>
+                <select id="listingType">
+                    <option value="">All Properties</option>
+                    <option value="villa">Villa</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="house">House</option>
+                </select>
+            </div>
+
+            <div class="filter-field">
+                <label for="listingPurpose">Purpose</label>
+                <select id="listingPurpose">
+                    <option value="">Buy or Rent</option>
+                    <option value="sale">For Sale</option>
+                    <option value="rent">For Rent</option>
+                </select>
+            </div>
+
+            <button type="submit" class="listing-search-button">
+                Apply Filters
+            </button>
+
+        </form>
+
+        <div class="listing-results">
+    <p id="resultsCount">Showing <strong>3 properties</strong></p>
+    <p id="noResults" hidden>No properties match your search. Try different filters.</p>
+        </div>
+<!-- PROPERTY CARDS -->
+
+<div class="property-grid listing-grid" id="propertyGrid">
+
+    <!-- PROPERTY 1 -->
+    <article class="property-card"
+        data-location="dubai uae"
+        data-type="villa"
+        data-purpose="sale">
+
+        <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800"
+                alt="Luxury villa in Dubai">
+
+            <span class="property-status">For Sale</span>
+        </div>
+
+        <div class="property-details">
+            <span class="property-type">Luxury Villa</span>
+            <h3 class="property-location">The Azure Residence</h3>
+            <p>Dubai, UAE</p>
+
+            <h4 class="property-price">$850,000</h4>
+
+            <div class="property-features">
+                <span>4 Beds</span>
+                <span>3 Baths</span>
+                <span>320 m²</span>
+            </div>
+
+            <a href="property-details.html?property=azure" class="property-link">
+    View Property →
+            </a>
+        </div>
+    </article>
+
+
+    <!-- PROPERTY 2 -->
+    <article class="property-card"
+        data-location="london uk"
+        data-type="apartment"
+        data-purpose="rent">
+
+        <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
+                alt="Modern apartment in London">
+
+            <span class="property-status">For Rent</span>
+        </div>
+
+        <div class="property-details">
+            <span class="property-type">Modern Apartment</span>
+            <h3 class="property-location">The Meridian Suites</h3>
+            <p>London, UK</p>
+
+            <h4 class="property-price">£2,800 / month</h4>
+
+            <div class="property-features">
+                <span>2 Beds</span>
+                <span>2 Baths</span>
+                <span>115 m²</span>
+            </div>
+
+            <a href="property-details.html?property=meridian" class="property-link">
+    View Property →
+            </a>
+        </div>
+    </article>
+
+
+    <!-- PROPERTY 3 -->
+    <article class="property-card"
+        data-location="toronto canada"
+        data-type="house"
+        data-purpose="sale">
+
+        <div class="property-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+                alt="Family home in Toronto">
+
+            <span class="property-status">For Sale</span>
+        </div>
+
+        <div class="property-details">
+            <span class="property-type">Family Home</span>
+            <h3 class="property-location">The Oakwood Estate</h3>
+            <p>Toronto, Canada</p>
+
+            <h4 class="property-price">C$620,000</h4>
+
+            <div class="property-features">
+                <span>3 Beds</span>
+                <span>3 Baths</span>
+                <span>245 m²</span>
+            </div>
+
+            <a href="property-details.html?property=oakwood" class="property-link">
+    View Property →
+            </a>
+        </div>
+    </article>
+
+</div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-name">HAVENSTONE</span>
+                    <span class="logo-subtitle">
+                        REAL ESTATE & PROPERTY CONSULTANTS
+                    </span>
+                </a>
+
+                <p>
+                    Every space has a story. Find yours.
+                    Discover exceptional properties and
+                    make confident property decisions.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="properties.html">Buy Property</a></li>
+                    <li><a href="properties.html">Rent Property</a></li>
+                    <li><a href="properties.html">Sell Property</a></li>
+                    <li><a href="properties.html">Property Investment</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Get in Touch</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Our Team</a></li>
+                    <li><a href="contact.html">List Your Property</a></li>
+                    <li>Worldwide Property Consultancy</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Havenstone. All rights reserved.</p>
+            <p>Designed with care by Havenstone.</p>
+        </div>
+
+    </div>
+</footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

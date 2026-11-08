@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover properties, explore possibilities and find your perfect home with Havenstone Real Estate.">
+
+    <title>Havenstone | Find Your Place</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="navbar container">
+
+            <!-- BRAND LOGO -->
+            <a href="index.html" class="logo">
+                <span class="logo-name">HAVENSTONE</span>
+                <span class="logo-subtitle">REAL ESTATE & PROPERTY CONSULTANTS</span>
+            </a>
+
+            <!-- NAVIGATION LINKS -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- ACTION BUTTON -->
+            <a href="contact.html" class="nav-button">
+                List a Property
+            </a>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-overlay">
+
+            <div class="hero-content container">
+
+                <span class="hero-label">
+                    YOUR PROPERTY JOURNEY STARTS HERE
+                </span>
+
+                <h1>
+                    Every space has a story.
+                    <span>Find yours.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover exceptional properties, explore
+                    new possibilities and find a place that
+                    feels like home.
+                </p>
+
+                <a href="properties.html" class="hero-button">
+                    Explore Properties
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROPERTY SEARCH SECTION -->
+    <section class="search-section">
+
+        <div class="container">
+
+            <div class="search-box">
+
+                <!-- SEARCH TABS -->
+                <div class="search-tabs">
+                    <button class="search-tab active" data-mode="buy">
+                        Buy
+                    </button>
+
+                    <button class="search-tab" data-mode="rent">
+                        Rent
+                    </button>
+
+                    <button class="search-tab" data-mode="invest">
+                        Invest
+                    </button>
+                </div>
+
+                <!-- SEARCH FORM -->
+                <form class="property-search" id="propertySearch">
+
+                    <div class="search-field">
+                        <label for="location">Location</label>
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="City, country or postcode"
+                        >
+                    </div>
+
+                    <div class="search-field">
+                        <label for="propertyType">Property Type</label>
+                        <select id="propertyType">
+                            <option value="">Any property</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="land">Land</option>
+                            <option value="commercial">Commercial</option>
+                        </select>
+                    </div>
+
+                    <div class="search-field">
+                        <label for="priceRange">Price Range</label>
+                        <select id="priceRange">
+                            <option value="">Any price</option>
+                            <option value="0-100000">Under 100,000</option>
+                            <option value="100000-300000">100,000 - 300,000</option>
+                            <option value="300000-500000">300,000 - 500,000</option>
+                            <option value="500000-1000000">500,000 - 1,000,000</option>
+                            <option value="1000000+">1,000,000+</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="search-button">
+                        Search Properties
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED PROPERTIES SECTION -->
+
+    <section class="featured-properties">
+
+        <div class="container">
+
+            <!-- SECTION HEADING -->
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        DISCOVER YOUR NEXT ADDRESS
+                    </span>
+
+                    <h2>Featured Properties</h2>
+
+                    <p>
+                        Explore a selection of exceptional
+                        properties from around the world.
+                    </p>
+                </div>
+
+                <a href="properties.html" class="view-all">
+                    View All Properties →
+                </a>
+
+            </div>
+
+
+            <!-- PROPERTY GRID -->
+
+            <div class="property-grid">
+
+
+                
+<!-- PROPERTY ONE -->
+
+<article class="property-card">
+
+    <div class="property-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800"
+            alt="Modern luxury villa"
+            loading="lazy"
+        >
+
+        <span class="property-status">
+            For Sale
+        </span>
+
+    </div>
+
+    <div class="property-details">
+
+        <span class="property-type">
+            LUXURY VILLA
+        </span>
+
+        <h3>The Azure Residence</h3>
+
+        <p class="property-location">
+            Dubai, United Arab Emirates
+        </p>
+
+        <div class="property-price">
+            $850,000
+        </div>
+
+        <div class="property-features">
+
+            <span>4 Beds</span>
+            <span>3 Baths</span>
+            <span>320 m²</span>
+
+        </div>
+
+        <a href="property-details.html?property=azure" class="property-link">
+            View Property →
+        </a>
+
+    </div>
+
+</article>
+
+
+                <!-- PROPERTY TWO -->
+
+                <article class="property-card">
+
+                    <div class="property-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
+                            alt="Contemporary luxury apartment"
+                            loading="lazy"
+                        >
+
+                        <span class="property-status rent">
+                            For Rent
+                        </span>
+
+                    </div>
+
+                    <div class="property-details">
+
+                        <span class="property-type">
+                            APARTMENT
+                        </span>
+
+                        <h3>The Meridian Suites</h3>
+
+                        <p class="property-location">
+                            London, United Kingdom
+                        </p>
+
+                        <div class="property-price">
+                            $2,800 <small>/ month</small>
+                        </div>
+
+                        <div class="property-features">
+
+                            <span>2 Beds</span>
+                            <span>2 Baths</span>
+                            <span>115 m²</span>
+
+                        </div>
+
+                        <a href="property-details.html?property=meridian" class="property-link">
+    View Property →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY THREE -->
+
+                <article class="property-card">
+
+                    <div class="property-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+                            alt="Modern family house"
+                            loading="lazy"
+                        >
+
+                        <span class="property-status">
+                            For Sale
+                        </span>
+
+                    </div>
+
+                    <div class="property-details">
+
+                        <span class="property-type">
+                            FAMILY HOME
+                        </span>
+
+                        <h3>The Oakwood Estate</h3>
+
+                        <p class="property-location">
+                            Toronto, Canada
+                        </p>
+
+                        <div class="property-price">
+                            $620,000
+                        </div>
+
+                        <div class="property-features">
+
+                            <span>3 Beds</span>
+                            <span>3 Baths</span>
+                            <span>245 m²</span>
+
+                        </div>
+
+                        <a href="property-details.html?property=oakwood" class="property-link">
+    View Property →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+<section class="why-choose-us">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">THE HAVENSTONE DIFFERENCE</span>
+            <h2>Why Choose Havenstone?</h2>
+            <p>
+                More than property consultants, we're your trusted
+                partners in finding the right place and making
+                confident property decisions.
+            </p>
+        </div>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+                <div class="benefit-icon">⌂</div>
+                <h3>Expert Property Guidance</h3>
+                <p>
+                    Get informed guidance and professional support
+                    throughout your property journey.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">◇</div>
+                <h3>Carefully Selected Properties</h3>
+                <p>
+                    Explore quality properties selected with
+                    attention to location, value and potential.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">◎</div>
+                <h3>International Market Reach</h3>
+                <p>
+                    Discover property opportunities across
+                    different locations and international markets.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">♡</div>
+                <h3>Dedicated Client Support</h3>
+                <p>
+                    Enjoy attentive support and clear communication
+                    from your first enquiry to your next move.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+  <section class="testimonials">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">CLIENT EXPERIENCES</span>
+            <h2>Stories From Our Clients</h2>
+            <p>
+                Every successful property journey means something
+                to us. Here's what some of our clients have to say.
+            </p>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <article class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">
+                    "Havenstone made finding my new home a smooth
+                    and enjoyable experience. Their guidance and
+                    attention to detail made all the difference."
+                </p>
+                <div class="testimonial-client">
+                    <div class="client-avatar">JM</div>
+                    <div>
+                        <h3>James Mitchell</h3>
+                        <span>Homebuyer · London, UK</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">
+                    "The team understood exactly what I was looking
+                    for. Their professionalism and communication
+                    throughout the process were outstanding."
+                </p>
+                <div class="testimonial-client">
+                    <div class="client-avatar">SA</div>
+                    <div>
+                        <h3>Sarah Anderson</h3>
+                        <span>Property Investor · Dubai, UAE</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">
+                    "From the first enquiry to finding the right
+                    property, everything felt organised and
+                    straightforward. I highly recommend their service."
+                </p>
+                <div class="testimonial-client">
+                    <div class="client-avatar">DL</div>
+                    <div>
+                        <h3>Daniel Lewis</h3>
+                        <span>Tenant · Toronto, Canada</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+  </section>
+  <section class="contact-cta">
+    <div class="container">
+        <div class="cta-content">
+
+            <span class="cta-label">LET'S FIND YOUR NEXT SPACE</span>
+
+            <h2>Ready to Make Your Next Move?</h2>
+
+            <p>
+                Whether you're buying, renting, selling or investing,
+                our team is ready to help you take the next step.
+            </p>
+
+            <a href="contact.html" class="cta-button">
+                Get in Touch
+            </a>
+
+        </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-name">HAVENSTONE</span>
+                    <span class="logo-subtitle">
+                        REAL ESTATE & PROPERTY CONSULTANTS
+                    </span>
+                </a>
+
+                <p>
+                    Every space has a story. Find yours.
+                    Discover exceptional properties and
+                    make confident property decisions.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="properties.html">Buy Property</a></li>
+                    <li><a href="properties.html">Rent Property</a></li>
+                    <li><a href="properties.html">Sell Property</a></li>
+                    <li><a href="properties.html">Property Investment</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Get in Touch</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Our Team</a></li>
+                    <li><a href="contact.html">List Your Property</a></li>
+                    <li>Worldwide Property Consultancy</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Havenstone. All rights reserved.</p>
+            <p>Designed with care by Havenstone.</p>
+        </div>
+
+    </div>
+  </footer>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
